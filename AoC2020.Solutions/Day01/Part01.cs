@@ -1,7 +1,6 @@
 ﻿namespace AoC2020.Solutions.Day01
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     public class Part01 : ISolution
@@ -13,14 +12,16 @@
                 .Select(x => int.Parse(x))
                 .ToList();
 
-            (int first, int second) = this.FindTwoNumbersBySum(numbers, 2020);
+            foreach (int number in numbers)
+            {
+                int target = 2020 - number;
+                if (numbers.Contains(target))
+                {
+                    return (number * target).ToString();
+                }
+            }
 
-            return (first * second).ToString();
-        }
-
-        private (int First, int Second) FindTwoNumbersBySum(List<int> numbers, int target)
-        {
-            return numbers.Select(x => (First: x, Second: target - x)).FirstOrDefault(x => numbers.Any(n => n != x.First && n == x.Second));
+            return string.Empty;
         }
     }
 }
