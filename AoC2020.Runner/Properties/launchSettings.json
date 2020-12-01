@@ -1,0 +1,12 @@
+{
+  "profiles": {
+    "AoC2020.Runner Day 1 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "1 1"
+    },
+    "AoC2020.Runner Day 1 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "1 2"
+    }
+  }
+}
