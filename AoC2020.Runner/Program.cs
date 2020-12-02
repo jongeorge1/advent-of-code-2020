@@ -17,7 +17,7 @@
             int executions = args.Length == 2 ? 1 : int.Parse(args[2]);
 
             // Load the data
-            var locationUri = new UriBuilder(Assembly.GetExecutingAssembly().CodeBase!);
+            var locationUri = new UriBuilder(Assembly.GetExecutingAssembly().Location!);
             string location = Uri.UnescapeDataString(locationUri.Path);
             string locationDirectory = Path.GetDirectoryName(location) !;
             string inputFileName = Path.Combine(locationDirectory, "Input", $"day{day:D2}.txt");
