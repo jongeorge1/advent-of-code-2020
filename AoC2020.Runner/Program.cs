@@ -26,6 +26,16 @@
             string result = string.Empty;
             var times = new List<double>(executions);
 
+            if (executions > 1)
+            {
+                // This is a timing run, so warm things up first.
+                for (int warmup = 0; warmup < 5; warmup++)
+                {
+                    ISolution instance = SolutionFactory.GetSolution(day, part);
+                    instance.Solve(data);
+                }
+            }
+
             for (int i = 0; i < executions; i++)
             {
                 ISolution instance = SolutionFactory.GetSolution(day, part);
