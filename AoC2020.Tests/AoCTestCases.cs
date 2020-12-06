@@ -25,6 +25,13 @@ namespace AoC2020.Tests
         [TestCase(4, 2, "eyr:2029 ecl:blu cid:129 byr:1989\r\niyr: 2014 pid: 896056539 hcl:#a97842 hgt:165cm", "1")]
         [TestCase(4, 2, "hcl:#888785\r\nhgt: 164cm byr: 2001 iyr: 2015 cid: 88\r\npid: 545766238 ecl: hzl\r\neyr: 2022", "1")]
         [TestCase(4, 2, "iyr:2010 hgt:158cm hcl:#b6652a ecl:blu byr:1944 eyr:2021 pid:093154719", "1")]
+        [TestCase(5, 1, "FBFBBFFRLR", "357")]
+        [TestCase(5, 1, "BFFFBBFRRR", "567")]
+        [TestCase(5, 1, "FFFBBBFRRR", "119")]
+        [TestCase(5, 1, "BBFFBBFRLL", "820")]
+        [TestCase(5, 1, "FBFBBFFRLR\r\nBFFFBBFRRR\r\nFFFBBBFRRR\r\nBBFFBBFRLL", "820")]
+        [TestCase(6, 1, "abc\r\n\r\na\r\nb\r\nc\r\n\r\nab\r\nac\r\n\r\na\r\na\r\na\r\na\r\n\r\nb", "11")]
+        [TestCase(6, 2, "abc\r\n\r\na\r\nb\r\nc\r\n\r\nab\r\nac\r\n\r\na\r\na\r\na\r\na\r\n\r\nb", "6")]
         public void Tests(int day, int part, string input, string expectedResult)
         {
             ISolution solution = SolutionFactory.GetSolution(day, part);
