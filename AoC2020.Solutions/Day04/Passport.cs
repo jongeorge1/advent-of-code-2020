@@ -69,7 +69,7 @@
                             return false;
                         }
 
-                        var heightType = val[^2..^0];
+                        string? heightType = val[^2..^0];
 
                         if (heightType != "in" && heightType != "cm")
                         {

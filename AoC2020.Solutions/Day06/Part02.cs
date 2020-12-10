@@ -1,7 +1,6 @@
 ﻿namespace AoC2020.Solutions.Day06
 {
     using System;
-    using System.Collections.Generic;
     using System.Linq;
 
     public class Part02 : ISolution

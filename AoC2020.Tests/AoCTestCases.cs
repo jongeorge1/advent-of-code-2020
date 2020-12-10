@@ -32,6 +32,18 @@ namespace AoC2020.Tests
         [TestCase(5, 1, "FBFBBFFRLR\r\nBFFFBBFRRR\r\nFFFBBBFRRR\r\nBBFFBBFRLL", "820")]
         [TestCase(6, 1, "abc\r\n\r\na\r\nb\r\nc\r\n\r\nab\r\nac\r\n\r\na\r\na\r\na\r\na\r\n\r\nb", "11")]
         [TestCase(6, 2, "abc\r\n\r\na\r\nb\r\nc\r\n\r\nab\r\nac\r\n\r\na\r\na\r\na\r\na\r\n\r\nb", "6")]
+        [TestCase(7, 1, "light red bags contain 1 bright white bag, 2 muted yellow bags.\r\ndark orange bags contain 3 bright white bags, 4 muted yellow bags.\r\nbright white bags contain 1 shiny gold bag.\r\nmuted yellow bags contain 2 shiny gold bags, 9 faded blue bags.\r\nshiny gold bags contain 1 dark olive bag, 2 vibrant plum bags.\r\ndark olive bags contain 3 faded blue bags, 4 dotted black bags.\r\nvibrant plum bags contain 5 faded blue bags, 6 dotted black bags.\r\nfaded blue bags contain no other bags.\r\ndotted black bags contain no other bags.", "4")]
+        [TestCase(7, 2, "light red bags contain 1 bright white bag, 2 muted yellow bags.\r\ndark orange bags contain 3 bright white bags, 4 muted yellow bags.\r\nbright white bags contain 1 shiny gold bag.\r\nmuted yellow bags contain 2 shiny gold bags, 9 faded blue bags.\r\nshiny gold bags contain 1 dark olive bag, 2 vibrant plum bags.\r\ndark olive bags contain 3 faded blue bags, 4 dotted black bags.\r\nvibrant plum bags contain 5 faded blue bags, 6 dotted black bags.\r\nfaded blue bags contain no other bags.\r\ndotted black bags contain no other bags.", "32")]
+        [TestCase(7, 2, "shiny gold bags contain 2 dark red bags.\r\ndark red bags contain 2 dark orange bags.\r\ndark orange bags contain 2 dark yellow bags.\r\ndark yellow bags contain 2 dark green bags.\r\ndark green bags contain 2 dark blue bags.\r\ndark blue bags contain 2 dark violet bags.\r\ndark violet bags contain no other bags.", "126")]
+        [TestCase(8, 1, "nop +0\r\nacc +1\r\njmp +4\r\nacc +3\r\njmp -3\r\nacc -99\r\nacc +1\r\njmp -4\r\nacc +6", "5")]
+        [TestCase(8, 2, "nop +0\r\nacc +1\r\njmp +4\r\nacc +3\r\njmp -3\r\nacc -99\r\nacc +1\r\njmp -4\r\nacc +6", "8")]
+        [TestCase(9, 1, "35\r\n20\r\n15\r\n25\r\n47\r\n40\r\n62\r\n55\r\n65\r\n95\r\n102\r\n117\r\n150\r\n182\r\n127\r\n219\r\n299\r\n277\r\n309\r\n576", "127")]
+        [TestCase(9, 2, "35\r\n20\r\n15\r\n25\r\n47\r\n40\r\n62\r\n55\r\n65\r\n95\r\n102\r\n117\r\n150\r\n182\r\n127\r\n219\r\n299\r\n277\r\n309\r\n576", "62")]
+        [TestCase(10, 1, "16\r\n10\r\n15\r\n5\r\n1\r\n11\r\n7\r\n19\r\n6\r\n12\r\n4", "35")]
+        [TestCase(10, 1, "28\r\n33\r\n18\r\n42\r\n31\r\n14\r\n46\r\n20\r\n48\r\n47\r\n24\r\n23\r\n49\r\n45\r\n19\r\n38\r\n39\r\n11\r\n1\r\n32\r\n25\r\n35\r\n8\r\n17\r\n7\r\n9\r\n4\r\n2\r\n34\r\n10\r\n3", "220")]
+        [TestCase(10, 2, "16\r\n10\r\n15\r\n5\r\n1\r\n11\r\n7\r\n19\r\n6\r\n12\r\n4", "8")]
+        [TestCase(10, 2, "1\r\n2\r\n3", "4")]
+        [TestCase(10, 2, "28\r\n33\r\n18\r\n42\r\n31\r\n14\r\n46\r\n20\r\n48\r\n47\r\n24\r\n23\r\n49\r\n45\r\n19\r\n38\r\n39\r\n11\r\n1\r\n32\r\n25\r\n35\r\n8\r\n17\r\n7\r\n9\r\n4\r\n2\r\n34\r\n10\r\n3", "19208")]
         public void Tests(int day, int part, string input, string expectedResult)
         {
             ISolution solution = SolutionFactory.GetSolution(day, part);

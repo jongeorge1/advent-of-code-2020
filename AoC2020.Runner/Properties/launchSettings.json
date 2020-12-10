@@ -47,6 +47,38 @@
     "AoC2020.Runner Day 6 Part 2": {
       "commandName": "Project",
       "commandLineArgs": "6 2"
+    },
+    "AoC2020.Runner Day 7 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "7 1"
+    },
+    "AoC2020.Runner Day 7 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "7 2"
+    },
+    "AoC2020.Runner Day 8 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "8 1"
+    },
+    "AoC2020.Runner Day 8 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "8 2"
+    },
+    "AoC2020.Runner Day 9 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "9 1"
+    },
+    "AoC2020.Runner Day 9 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "9 2"
+    },
+    "AoC2020.Runner Day 10 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "10 1"
+    },
+    "AoC2020.Runner Day 10 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "10 2"
     }
   }
 }
