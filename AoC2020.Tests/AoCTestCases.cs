@@ -44,6 +44,8 @@ namespace AoC2020.Tests
         [TestCase(10, 2, "16\r\n10\r\n15\r\n5\r\n1\r\n11\r\n7\r\n19\r\n6\r\n12\r\n4", "8")]
         [TestCase(10, 2, "1\r\n2\r\n3", "4")]
         [TestCase(10, 2, "28\r\n33\r\n18\r\n42\r\n31\r\n14\r\n46\r\n20\r\n48\r\n47\r\n24\r\n23\r\n49\r\n45\r\n19\r\n38\r\n39\r\n11\r\n1\r\n32\r\n25\r\n35\r\n8\r\n17\r\n7\r\n9\r\n4\r\n2\r\n34\r\n10\r\n3", "19208")]
+        [TestCase(11, 1, "L.LL.LL.LL\r\nLLLLLLL.LL\r\nL.L.L..L..\r\nLLLL.LL.LL\r\nL.LL.LL.LL\r\nL.LLLLL.LL\r\n..L.L.....\r\nLLLLLLLLLL\r\nL.LLLLLL.L\r\nL.LLLLL.LL", "37")]
+        [TestCase(11, 2, "L.LL.LL.LL\r\nLLLLLLL.LL\r\nL.L.L..L..\r\nLLLL.LL.LL\r\nL.LL.LL.LL\r\nL.LLLLL.LL\r\n..L.L.....\r\nLLLLLLLLLL\r\nL.LLLLLL.L\r\nL.LLLLL.LL", "26")]
         public void Tests(int day, int part, string input, string expectedResult)
         {
             ISolution solution = SolutionFactory.GetSolution(day, part);

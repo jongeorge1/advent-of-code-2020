@@ -18,7 +18,7 @@
                 ReadOnlySpan<char> current = end == -1 ? inputSpan : inputSpan[0..end];
                 numbers.Add(int.Parse(current));
 
-                inputSpan = inputSpan[(end + newLine.Length)..];
+                inputSpan = inputSpan[(end + newLine.Length) ..];
             }
 
             foreach (int number in numbers)
