@@ -62,6 +62,9 @@ namespace AoC2020.Tests
         [TestCase(15, 1, "2,3,1", "78")]
         [TestCase(15, 1, "3,2,1", "438")]
         [TestCase(15, 1, "3,1,2", "1836")]
+        [TestCase(16, 1, "class: 1-3 or 5-7\r\nrow: 6-11 or 33-44\r\nseat: 13-40 or 45-50\r\n\r\nyour ticket:\r\n7,1,14\r\n\r\nnearby tickets:\r\n7,3,47\r\n40,4,50\r\n55,2,20\r\n38,6,12", "71")]
+        [TestCase(17, 1, ".#.\r\n..#\r\n###", "112")]
+        [TestCase(17, 2, ".#.\r\n..#\r\n###", "848")]
         public void Tests(int day, int part, string input, string expectedResult)
         {
             ISolution solution = SolutionFactory.GetSolution(day, part);

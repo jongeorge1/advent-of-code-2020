@@ -14,7 +14,8 @@
                 .ToList();
 
             // Store last index of each occurrence in a dictionary
-            var lastOccurrences = new Dictionary<int, int>();
+            int[] lastOccurrences = new int[30000000];
+            Array.Fill(lastOccurrences, -1);
 
             for (int index = 0; index < numbers.Count - 1; index++)
             {
@@ -28,10 +29,10 @@
             {
                 int newNumber = 0;
 
-                // Find the last index of the last number
-                if (lastOccurrences.TryGetValue(lastNumber, out int previousOccurrenceindex))
+                int previousOccurrenceindex = lastOccurrences[lastNumber];
+
+                if (previousOccurrenceindex != -1)
                 {
-                    // This number hasn't happened before
                     newNumber = lastIndex - previousOccurrenceindex;
                 }
 
