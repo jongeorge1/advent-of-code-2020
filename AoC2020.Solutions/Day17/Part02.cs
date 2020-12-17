@@ -16,27 +16,18 @@
                 .Where(entry => entry.Entry == '#')
                 .ToDictionary(item => item.Location, _ => true);
 
-            int xMin = grid.Keys.Min(el => el.x) - 1;
-            int xMax = grid.Keys.Max(el => el.x) + 1;
-            int yMin = grid.Keys.Min(el => el.y) - 1;
-            int yMax = grid.Keys.Max(el => el.y) + 1;
-            int zMin = 0;
-            int zMax = 0;
-            int wMin = 0;
-            int wMax = 0;
-
             for (int cycle = 0; cycle < 6; cycle++)
             {
                 // Start each cycle by finding the bounds of the current space. For the next cycle, we extend that
                 // space out by 1 in each direction then determine the state of each location in that space.
-                --xMin;
-                ++xMax;
-                --yMin;
-                ++yMax;
-                --zMin;
-                ++zMax;
-                --wMin;
-                ++wMax;
+                int xMin = grid.Keys.Min(el => el.x) - 1;
+                int xMax = grid.Keys.Max(el => el.x) + 1;
+                int yMin = grid.Keys.Min(el => el.y) - 1;
+                int yMax = grid.Keys.Max(el => el.y) + 1;
+                int zMin = grid.Keys.Min(el => el.z) - 1;
+                int zMax = grid.Keys.Max(el => el.z) + 1;
+                int wMin = grid.Keys.Min(el => el.w) - 1;
+                int wMax = grid.Keys.Min(el => el.w) + 1;
 
                 var newSpace = new Dictionary<(int x, int y, int z, int w), bool>(10000);
 
