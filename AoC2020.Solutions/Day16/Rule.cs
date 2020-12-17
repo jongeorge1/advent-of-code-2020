@@ -15,8 +15,6 @@
                 (int.Parse(components[1]), int.Parse(components[2])),
                 (int.Parse(components[3]), int.Parse(components[4])),
             };
-            // The remainder contains two ranges separated by "or"...
-
         }
 
         public string Name { get; }

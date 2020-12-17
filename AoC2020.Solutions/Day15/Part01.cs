@@ -23,9 +23,9 @@
             }
 
             int lastNumber = numbers[^1];
-            int lastIndex = numbers.Count - 1;
 
-            while (lastIndex < (2020 - 1)) // Offset -1 to account for 0-based indexing
+            // Offset -1 to account for 0-based indexing
+            for (int lastIndex = numbers.Count - 1; lastIndex < (2020 - 1); lastIndex++)
             {
                 int newNumber = 0;
 
@@ -38,7 +38,6 @@
 
                 lastOccurrences[lastNumber] = lastIndex;
                 lastNumber = newNumber;
-                lastIndex++;
             }
 
             return lastNumber.ToString();
