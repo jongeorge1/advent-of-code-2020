@@ -135,6 +135,70 @@
     "AoC2020.Runner Day 17 Part 2": {
       "commandName": "Project",
       "commandLineArgs": "17 2"
+    },
+    "AoC2020.Runner Day 18 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "18 1"
+    },
+    "AoC2020.Runner Day 18 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "18 2"
+    },
+    "AoC2020.Runner Day 19 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "19 1"
+    },
+    "AoC2020.Runner Day 19 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "19 2"
+    },
+    "AoC2020.Runner Day 20 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "20 1"
+    },
+    "AoC2020.Runner Day 20 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "20 2"
+    },
+    "AoC2020.Runner Day 21 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "21 1"
+    },
+    "AoC2020.Runner Day 21 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "21 2"
+    },
+    "AoC2020.Runner Day 22 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "22 1"
+    },
+    "AoC2020.Runner Day 22 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "22 2"
+    },
+    "AoC2020.Runner Day 23 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "23 1"
+    },
+    "AoC2020.Runner Day 23 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "23 2"
+    },
+    "AoC2020.Runner Day 24 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "24 1"
+    },
+    "AoC2020.Runner Day 24 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "24 2"
+    },
+    "AoC2020.Runner Day 25 Part 1": {
+      "commandName": "Project",
+      "commandLineArgs": "25 1"
+    },
+    "AoC2020.Runner Day 25 Part 2": {
+      "commandName": "Project",
+      "commandLineArgs": "25 2"
     }
   }
 }

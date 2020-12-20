@@ -65,6 +65,14 @@ namespace AoC2020.Tests
         [TestCase(16, 1, "class: 1-3 or 5-7\r\nrow: 6-11 or 33-44\r\nseat: 13-40 or 45-50\r\n\r\nyour ticket:\r\n7,1,14\r\n\r\nnearby tickets:\r\n7,3,47\r\n40,4,50\r\n55,2,20\r\n38,6,12", "71")]
         [TestCase(17, 1, ".#.\r\n..#\r\n###", "112")]
         [TestCase(17, 2, ".#.\r\n..#\r\n###", "848")]
+        [TestCase(18, 1, "2 + 5", "7")]
+        [TestCase(18, 1, "2 * 5", "10")]
+        [TestCase(18, 1, "2 + 5 * 5", "35")]
+        [TestCase(18, 1, "2 + (5 * 5)", "27")]
+        [TestCase(18, 1, "2 * 3 + (4 * 5)", "26")]
+        [TestCase(18, 1, "5 + (8 * 3 + 9 + 3 * 4 * 3)", "437")]
+        [TestCase(18, 1, "5 * 9 * (7 * 3 * 3 + 9 * 3 + (8 + 6 * 4))", "12240")]
+        [TestCase(18, 1, "((2 + 4 * 9) * (6 + 9 * 8 + 6) + 6) + 2 + 4 * 2", "13632")]
         public void Tests(int day, int part, string input, string expectedResult)
         {
             ISolution solution = SolutionFactory.GetSolution(day, part);
