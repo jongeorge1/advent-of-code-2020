@@ -36,7 +36,6 @@
 
         private static class RuleFactory
         {
-
             public static IRule GetRule(string input)
             {
                 if (input.Contains('"'))
@@ -53,7 +52,6 @@
         private class NestedRule : IRule
         {
             private readonly int[][] rulesets;
-            private IEnumerable<string>? possibleMessages;
             private string? regex;
 
             public NestedRule(string input)
@@ -107,7 +105,7 @@
 
         private class SingleCharacterRule : IRule
         {
-            private string regex;
+            private readonly string regex;
 
             public SingleCharacterRule(string input)
             {
